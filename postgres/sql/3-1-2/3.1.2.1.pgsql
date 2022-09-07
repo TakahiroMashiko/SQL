@@ -7,6 +7,8 @@ SELECT
   -- regexp_substr関数とregexp_replace関数を組み合わせる
   -- ,regexp_replace(regexp_substr(referrer, 'http?://[^/]*'), 'https?://', '')
   -- AS referrer_host
+  -- ■Hive,SparkSQLの場合、parase_url関数でホスト名を抽出できる
+  -- ,parse_url(referrer, 'HOST') AS referrer_host
 
 FROM access_log
 ;
