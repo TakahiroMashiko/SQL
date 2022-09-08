@@ -9,6 +9,7 @@ SELECT
   -- AS referrer_host
   -- ■Hive,SparkSQLの場合、parase_url関数でホスト名を抽出できる
   -- ,parse_url(referrer, 'HOST') AS referrer_host
-
+  -- ■BigQueryの場合はhost関数が利用できる
+  -- ,host(referrer) AS referrer_host
 FROM access_log
 ;
