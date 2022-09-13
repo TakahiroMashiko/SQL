@@ -7,5 +7,6 @@ SELECT
   , substring(url from 'id=([^&]*)') AS id
   -- Redshiftの場合、regexp_substr関数とregexp_replace関数を組み合わせる
   -- , regexp_replace(regexp_substr(url, '//[^/]+[^?#]+'), '//[^/]+', '') AS path
+  -- , regexp_replace(regexp_substr(url, 'id=[^&]*'), 'id=', '') AS id
 FROM access_log
 ;
