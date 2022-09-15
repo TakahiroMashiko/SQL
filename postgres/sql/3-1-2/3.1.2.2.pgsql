@@ -10,5 +10,6 @@ SELECT
   -- , regexp_replace(regexp_substr(url, 'id=[^&]*'), 'id=', '') AS id
   -- ■BigQueryの場合、正規表現にregexp_extract関数を用いる
   -- , regexp_extract(url, '//[^/]+([^?#]+)') AS path
+  -- , regexp_extract(url, 'id=([^&]*)') AS id
 FROM access_log
 ;
