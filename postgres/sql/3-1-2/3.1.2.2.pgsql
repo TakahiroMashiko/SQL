@@ -13,5 +13,6 @@ SELECT
   -- , regexp_extract(url, 'id=([^&]*)') AS id
   -- ■Hive、SparkSQLの場合、parse_url関数でURLのパス部分やクエリパラメータ部分の値を抽出する
   -- , parse_url(url, 'PATH') AS path
+  -- , parse_url(url, 'QUERY') AS id
 FROM access_log
 ;
