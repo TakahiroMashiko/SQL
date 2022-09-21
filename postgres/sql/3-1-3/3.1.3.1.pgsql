@@ -9,4 +9,6 @@ SELECT
   -- ■ Redshiftの場合も、split_partでn番目の要素を抽出できる
   -- , split_part(regexp_replace(
   --    regexp_substr(url, '//[^/]+[^?#]+'), '//[^/]+', '') '/', 2) AS path1
+  -- , split_part(regexp_replace(
+  --    regexp_substr(url, '//[^/]+[^?#]+'), '//[^/]+', '') '/', 3) AS path2
 FROM access_log
