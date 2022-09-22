@@ -11,4 +11,5 @@ SELECT
   --    regexp_substr(url, '//[^/]+[^?#]+'), '//[^/]+', '') '/', 2) AS path1
   -- , split_part(regexp_replace(
   --    regexp_substr(url, '//[^/]+[^?#]+'), '//[^/]+', '') '/', 3) AS path2
+  -- , split(regexp_extract(url, '//[^/]+([^?#]+'), '/')[SAFE_ORDINAL(2)] AS path1
 FROM access_log
