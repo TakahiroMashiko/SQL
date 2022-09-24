@@ -13,4 +13,7 @@ SELECT
   --    regexp_substr(url, '//[^/]+[^?#]+'), '//[^/]+', '') '/', 3) AS path2
   -- , split(regexp_extract(url, '//[^/]+([^?#]+'), '/')[SAFE_ORDINAL(2)] AS path1
   -- , split(regexp_extract(url, '//[^/]+([^?#]+'), '/')[SAFE_ORDINAL(3)] AS path2
+  -- ■ Hive, SparkSQLの場合も、split関数で配列に分解する
+  -- ただし、配列のインデックスが0から始まる
+  -- , split(parse_url(url, 'PATH'), '/')[1] AS path1
 FROM access_log
