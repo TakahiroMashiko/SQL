@@ -16,4 +16,5 @@ SELECT
   -- ■ Hive, SparkSQLの場合も、split関数で配列に分解する
   -- ただし、配列のインデックスが0から始まる
   -- , split(parse_url(url, 'PATH'), '/')[1] AS path1
+  -- , split(parse_url(url, 'PATH'), '/')[2] AS path2
 FROM access_log
