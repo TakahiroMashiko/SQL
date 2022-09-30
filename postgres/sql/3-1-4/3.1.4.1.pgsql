@@ -7,4 +7,5 @@ SELECT
 -- ■ Hive, BigQuery, SparkSQLの場合は、
 -- CURRENT_DATE()関数やCURRENT_TIMESTAMP()関数が利用できる
 --  CURRENT_DATE() AS dt
+--  , CURRENT_TIMESTAMP() AS stamp
 ;
