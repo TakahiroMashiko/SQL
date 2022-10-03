@@ -11,4 +11,5 @@ SELECT
 
 -- ■ Redshiftの場合は、現在の日付にCURRENT_DATE、現在のタイムスタンプにGETDATE()を用いる
 --  CURRENT_DATE AS dt
+--  , GETDATE() AS stamp
 ;
