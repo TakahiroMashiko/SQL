@@ -12,4 +12,8 @@ SELECT
 -- ■ Redshiftの場合は、現在の日付にCURRENT_DATE、現在のタイムスタンプにGETDATE()を用いる
 --  CURRENT_DATE AS dt
 --  , GETDATE() AS stamp
+
+-- ■ PostgresSQLの場合、CURRENT_TIMESTAMPはタイムゾーン付きのタイムスタンプ型になる
+-- タイムゾーンなしのタイムスタンプを取得したい場合は、LOCALTIMESTAMPを用いる
+-- , LOCALTIMESTAMP AS stamp
 ;
