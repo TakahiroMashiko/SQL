@@ -13,4 +13,5 @@ SELECT
   -- 「type value」の形式が使用できる
   -- ※ ただし、valueは定数である必要があり、カラム名は指定できない
   -- date '2016-01-30' AS dt
+  -- , timestamp '2016-01-30 12:00:00' AS stamp
 ;
