@@ -14,4 +14,7 @@ SELECT
   -- ※ ただし、valueは定数である必要があり、カラム名は指定できない
   -- date '2016-01-30' AS dt
   -- , timestamp '2016-01-30 12:00:00' AS stamp
+
+  -- ■ PostgresSQL, Redshiftの場合、「value::type」の形式が利用できる
+  -- '2016-01-30'::date' AS dt
 ;
