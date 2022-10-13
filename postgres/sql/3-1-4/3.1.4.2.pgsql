@@ -17,4 +17,5 @@ SELECT
 
   -- ■ PostgresSQL, Redshiftの場合、「value::type」の形式が利用できる
   -- '2016-01-30'::date' AS dt
+  -- , '2016-01-30 12:00:00'::timestamp' AS stamp
 ;
