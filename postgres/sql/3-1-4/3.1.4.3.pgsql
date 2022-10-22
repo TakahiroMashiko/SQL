@@ -8,6 +8,7 @@ SELECT
 
   -- Hive, SparkSQLの場合、EXTRACT関数の代わりにそれぞれに対応する関数を用いる
   -- , YEAR(stamp) AS year
+  -- , MONTH(stamp) AS month
 FROM
   (SELECT CAST('2016-01-30 12:00:00' AS timestamp) AS stamp) AS timestamp
 ;h
