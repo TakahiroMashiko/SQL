@@ -5,5 +5,7 @@ SELECT
   , substring(stamp, 6, 2) AS month
   , substring(stamp, 9, 2) AS day
   , substring(stamp, 12, 2) AS hour
+  -- 年と月を同事に抽出する
+  , substring(stamp, 1, 7) AS year_month
 FROM
 ;
