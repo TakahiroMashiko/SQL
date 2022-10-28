@@ -4,5 +4,6 @@ SELECT
   , substring(stamp, 1, 4) AS year
   , substring(stamp, 6, 2) AS month
   , substring(stamp, 9, 2) AS day
+  , substring(stamp, 12, 2) AS hour
 FROM
 ;
