@@ -7,5 +7,8 @@ SELECT
   , substring(stamp, 12, 2) AS hour
   -- 年と月を同事に抽出する
   , substring(stamp, 1, 7) AS year_month
+
+  -- ■PostgreSQL, Hive, BigQuery, SparkSQLでは、substr関数が利用できる
+  -- , substr(stamp, 1, 4) AS year
 FROM
 ;
