@@ -11,5 +11,6 @@ SELECT
   -- ■PostgreSQL, Hive, BigQuery, SparkSQLでは、substr関数が利用できる
   -- , substr(stamp, 1, 4) AS year
   -- , substr(stamp, 6, 2) AS month
+  -- , substr(stamp, 9, 2) AS day
 FROM
 ;
