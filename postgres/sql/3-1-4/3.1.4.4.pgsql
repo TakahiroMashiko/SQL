@@ -13,5 +13,6 @@ SELECT
   -- , substr(stamp, 6, 2) AS month
   -- , substr(stamp, 9, 2) AS day
   -- , substr(stamp, 12, 2) AS hour
+  -- , substr(stamp, 1, 7) AS year_month
 FROM
 ;
