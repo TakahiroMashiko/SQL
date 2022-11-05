@@ -17,4 +17,6 @@ SELECT
 FROM
   -- PostgreSQL, Redshiftの場合、文字列型としてtextが利用できる
   (SELECT CAST('2016-01-30 12:00:00' AS text) AS stamp) AS time
+  -- Hive, BigQuery, SparkSQLの場合、文字列型としてstringを用いる
+  -- (SELECT CAST('2016-01-30 12:00:00' AS string) AS stamp) AS time
 ;
