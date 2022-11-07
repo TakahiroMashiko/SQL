@@ -1,5 +1,6 @@
 SELECT
+  purchase_id
 
 FROM
-  purchase_log__with_coupon
+  purchase_log_with_coupon
 ;
