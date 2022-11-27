@@ -6,6 +6,7 @@ SELECT
   , CASE
       WHEN q1 < q2 THEN '+'
       WHEN q1 = q2 THEN ' '
+      ELSE '-'
   END AS judge_q1_q2
 FROM
   quarterly_sales
