@@ -14,4 +14,6 @@ SELECT
   , SIGN(q2 - q1) AS sign_q2_q1
 FROM
   quarterly_sales
+ORDER BY
+  year
 ;
