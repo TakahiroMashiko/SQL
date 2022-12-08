@@ -6,4 +6,6 @@ SELECT
   , least(q1, q2, q3, q4) AS least_sales
 FROM
   quarterly_sales
+ORDER BY
+  year
 ;
