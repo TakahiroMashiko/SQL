@@ -3,5 +3,6 @@ SELECT
 
 FROM
   quarterly_sales
-
+ORDER BY
+  year
 ;
