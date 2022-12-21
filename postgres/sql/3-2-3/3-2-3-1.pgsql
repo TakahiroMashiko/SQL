@@ -4,5 +4,6 @@ SELECT
 
 FROM
   advertising_stats
-
+WHERE
+  dt = '2017-04-01'
 ;
