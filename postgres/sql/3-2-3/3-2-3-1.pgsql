@@ -3,7 +3,7 @@ SELECT
   , ad_id
   -- ■Hive, Redshift, BigQuery, SparkSQLの場合、
   -- 整数の割り算でも結果が自動的に実数へ変換される
-  , clicks / impression AS ctr
+  , clicks / impressions AS ctr
   -- ■ PostgreSQLの場合、整数の割り算では小数点が切り捨てられてしまうので、明示的に型を変換する
   -- , CAST(clicks AS double precision) / impressions AS ctr
   -- 実数の定数を先頭で掛け算すると、暗黙的に型変換される
