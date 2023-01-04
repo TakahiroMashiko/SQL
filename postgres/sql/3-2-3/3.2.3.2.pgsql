@@ -4,4 +4,6 @@ SELECT
 
 FROM
   advertising_stats
+ORDER BY
+  dt, ad_id
 ;
