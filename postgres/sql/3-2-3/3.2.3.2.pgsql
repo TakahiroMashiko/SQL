@@ -12,6 +12,7 @@ SELECT
     , 100.0 * clicks / NULLIF(impressions, 0) AS ctr_as_percent_by_null
     -- ■ Hiveの場合、NULLIFの代わりにCASE式を用いる
     -- , 100 * clicks
+    -- / CASE WHEN impressions = 0 THEN NULL ELSE impressions END
 FROM
   advertising_stats
 ORDER BY
