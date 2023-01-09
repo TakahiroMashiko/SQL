@@ -13,6 +13,7 @@ SELECT
     -- ■ Hiveの場合、NULLIFの代わりにCASE式を用いる
     -- , 100 * clicks
     -- / CASE WHEN impressions = 0 THEN NULL ELSE impressions END
+    -- AS ctr_as_percent_by_null
 FROM
   advertising_stats
 ORDER BY
