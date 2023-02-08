@@ -7,7 +7,7 @@ SELECT
 
   , register_stamp::date AS register_date
   , (register_stamp::date + '1 day'::interval)::date AS after_1_day
-
+  , (register_stamp::date - '1 month'::interval)::date AS before_1_month
 
 FROM
   mst_users_with_dates
