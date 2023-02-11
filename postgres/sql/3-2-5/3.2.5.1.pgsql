@@ -12,6 +12,7 @@ SELECT
   -- ■ Redshiftの場合、dateadd関数を用いる
   -- , register_stamp::timestamp AS register_stamp
   -- , dateadd(hour, 1, register_stamp::timestamp) AS after_1_hour
+  -- , dateadd(minute, -30, register_stamp::timestamp) AS before_30_minutes
 
 FROM
   mst_users_with_dates
