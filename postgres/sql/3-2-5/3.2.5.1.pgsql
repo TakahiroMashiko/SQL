@@ -16,6 +16,8 @@ SELECT
   --
   --
   -- , register_stamp::date AS register_date
+  -- , dateadd(day, 1, register_date) AS after_1_day
+
 
 FROM
   mst_users_with_dates
