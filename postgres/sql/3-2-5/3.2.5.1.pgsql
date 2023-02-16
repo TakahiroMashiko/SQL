@@ -19,6 +19,9 @@ SELECT
   -- , dateadd(day, 1, register_date) AS after_1_day
   -- , dateadd(month, -1, register_stamp) AS before_1_month
 
+  -- ■ BigQueryの場合、timestamp_add/sub, date_add/sub等の関数を用いる
+  -- , timestamp(register_stamp) AS register_stamp
+
 FROM
   mst_users_with_dates
 ;
