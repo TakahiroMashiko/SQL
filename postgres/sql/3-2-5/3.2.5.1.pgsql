@@ -1,3 +1,4 @@
+-- 3.2.5.1:未来や過去の日付・時刻を計算するクエリ
 SELECT
   user_id
   -- ■ PostgreSQLの場合、interval型のデータを用いて日付/時刻の四則演算ができる
@@ -21,6 +22,7 @@ SELECT
 
   -- ■ BigQueryの場合、timestamp_add/sub, date_add/sub等の関数を用いる
   -- , timestamp(register_stamp) AS register_stamp
+  -- , timestamp_add(timestamp(register_stamp), interval 1 hour) AS after_1_hour
 
 FROM
   mst_users_with_dates
