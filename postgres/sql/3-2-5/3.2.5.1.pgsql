@@ -23,6 +23,8 @@ SELECT
   -- ■ BigQueryの場合、timestamp_add/sub, date_add/sub等の関数を用いる
   -- , timestamp(register_stamp) AS register_stamp
   -- , timestamp_add(timestamp(register_stamp), interval 1 hour) AS after_1_hour
+  -- , timestamp_sub(timestamp(register_stamp), interval 30 minute) AS before_30_minute
+  --
 
 FROM
   mst_users_with_dates
