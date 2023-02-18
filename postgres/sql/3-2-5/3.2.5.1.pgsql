@@ -25,6 +25,8 @@ SELECT
   -- , timestamp_add(timestamp(register_stamp), interval 1 hour) AS after_1_hour
   -- , timestamp_sub(timestamp(register_stamp), interval 30 minute) AS before_30_minute
   --
+  -- タイムスタンプの文字列から直接日付型に変換できないため、タイムスタンプ型に直してから日付型に変換する
+  -- , date(timestamp(register_stamp)) AS register_stamp
 
 FROM
   mst_users_with_dates
