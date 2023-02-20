@@ -27,6 +27,8 @@ SELECT
   --
   -- タイムスタンプの文字列から直接日付型に変換できないため、タイムスタンプ型に直してから日付型に変換する
   -- , date(timestamp(register_stamp)) AS register_stamp
+  -- , date_add(date(timestamp(register_stamp)), interval 1 day) AS after_1_day
+
 FROM
   mst_users_with_dates
 ;
