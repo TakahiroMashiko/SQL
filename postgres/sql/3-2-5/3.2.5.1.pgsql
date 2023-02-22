@@ -30,6 +30,10 @@ SELECT
   -- , date_add(date(timestamp(register_stamp)), interval 1 day) AS after_1_day
   -- , date_sub(date(timestamp(register_stamp)), interval 1 month) AS before_1_month
 
+  -- ■ Hive, SparkSQLの場合、時刻を計算する関数が実装されていないため、
+  -- 一度unixtimeに変換して秒単位の計算を行い、もう一度タイムスタンプに戻す
+  -- , CAST(register_stamp AS timestamp) AS register_stamp
+
 FROM
   mst_users_with_dates
 ;
