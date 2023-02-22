@@ -34,6 +34,7 @@ SELECT
   -- 一度unixtimeに変換して秒単位の計算を行い、もう一度タイムスタンプに戻す
   -- , CAST(register_stamp AS timestamp) AS register_stamp
 
+
 FROM
   mst_users_with_dates
 ;
