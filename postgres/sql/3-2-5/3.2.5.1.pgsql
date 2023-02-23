@@ -33,8 +33,7 @@ SELECT
   -- ■ Hive, SparkSQLの場合、時刻を計算する関数が実装されていないため、
   -- 一度unixtimeに変換して秒単位の計算を行い、もう一度タイムスタンプに戻す
   -- , CAST(register_stamp AS timestamp) AS register_stamp
-
-
+  -- , from_unixtime(unix_timestamp(register_stamp) + 60 * 60) AS after_1_hour
 FROM
   mst_users_with_dates
 ;
