@@ -34,6 +34,8 @@ SELECT
   -- 一度unixtimeに変換して秒単位の計算を行い、もう一度タイムスタンプに戻す
   -- , CAST(register_stamp AS timestamp) AS register_stamp
   -- , from_unixtime(unix_timestamp(register_stamp) + 60 * 60) AS after_1_hour
+  -- , from_unixtime(unix_timestamp(register_stamp) - 30 * 60) AS before_30_minute
+
 FROM
   mst_users_with_dates
 ;
