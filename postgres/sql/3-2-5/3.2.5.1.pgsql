@@ -35,7 +35,14 @@ SELECT
   -- , CAST(register_stamp AS timestamp) AS register_stamp
   -- , from_unixtime(unix_timestamp(register_stamp) + 60 * 60) AS after_1_hour
   -- , from_unixtime(unix_timestamp(register_stamp) - 30 * 60) AS before_30_minute
-
+  --
+  -- タイムスタンプの文字列から日付を得るには、to_date関数を用いる
+  -- ※ ただし、Hive 2.1.0より前のバージョンでは文字列型として返される
+  -- to_date(register_stamp) AS register_date
+  --
+  -- 日や月の計算には、date_add関数やadd_months関数が利用できる
+  -- ただし、年の計算をする関数は実装されていない
+  -- date_add(to_date(register_stamp), 1) AS after_1_day
 FROM
   mst_users_with_dates
 ;
