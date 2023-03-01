@@ -43,7 +43,7 @@ SELECT
   -- 日や月の計算には、date_add関数やadd_months関数が利用できる
   -- ただし、年の計算をする関数は実装されていない
   -- date_add(to_date(register_stamp), 1) AS after_1_day
-
+  -- add_months(to_date(register_stamp), -1) AS before_1_month
 FROM
   mst_users_with_dates
 ;
