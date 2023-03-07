@@ -7,4 +7,8 @@ SELECT
   , register_stamp::date AS register_date
   , CURRENT_DATE - register_date AS diff_days
 
+  -- ■ BigQueryの場合、date_diff関数が利用できる
+  -- , CURRENT_DATE AS today
+
+FROM mst_users_with_dates
 ;
