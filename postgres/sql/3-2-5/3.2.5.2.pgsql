@@ -10,6 +10,7 @@ SELECT
   -- ■ BigQueryの場合、date_diff関数が利用できる
   -- , CURRENT_DATE AS today
   -- , date(timestamp(register_date)) AS register_date
+  -- , date_diff(CURRENT_DATE, date(timestamp(register_stamp)), day) AS diff_days
 
 FROM mst_users_with_dates
 ;
