@@ -12,5 +12,8 @@ SELECT
   -- , date(timestamp(register_date)) AS register_date
   -- , date_diff(CURRENT_DATE, date(timestamp(register_stamp)), day) AS diff_days
 
+  -- ■ Hive, SparkSQLの場合、datediff関数が利用できる
+  -- , CURRENT_DATE() AS to_date
+
 FROM mst_users_with_dates
 ;
