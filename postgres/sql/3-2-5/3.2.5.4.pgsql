@@ -9,5 +9,8 @@ SELECT
   , date_diff(year, birth_date::date, CURRENT_DATE)
   , date_diff(year, birth_date::date, register_stamp::date)
 
+  -- ■ BigQueryの場合、date_diff関数にyearを指定しても、年部分での差分しか計算できない
+  -- , CURRENT_DATE AS today
+
 FROM mst_users_with_dates
 ;
