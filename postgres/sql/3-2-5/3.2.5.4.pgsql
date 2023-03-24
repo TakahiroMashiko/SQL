@@ -11,6 +11,7 @@ SELECT
 
   -- ■ BigQueryの場合、date_diff関数にyearを指定しても、年部分での差分しか計算できない
   -- , CURRENT_DATE AS today
+  -- , date(timestamp(register_date)) AS register_date
 
 FROM mst_users_with_dates
 ;
