@@ -13,6 +13,7 @@ SELECT
   -- , CURRENT_DATE AS today
   -- , date(timestamp(register_date)) AS register_date
   -- , date(timestamp(birth_date)) AS birth_date
+  -- , date_diff(CURRENT_DATE, date(timestamp(birth_date)), year) AS current_age
 
 FROM mst_users_with_dates
 ;
