@@ -2,6 +2,7 @@
 SELECT
   user_id
   , substring(register_stamp, 1, 10) AS register_date
+  , birth_date
 
 FROM mst_users_with_dates
 ;
