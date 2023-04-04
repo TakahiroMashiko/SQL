@@ -16,5 +16,10 @@ SELECT
     ) / 10000
   ) AS current_age
 
+  -- ■ BigQueryの場合、textをstring、integerをint64に置き換える
+  -- ( CAST(replace(CAST(CURRENT_DATE AS string), '-', '') AS int64)
+  -- - CAST(replace(birth_date, '-', '') AS int64)
+  -- ) / 10000
+
 FROM mst_users_with_dates
 ;
