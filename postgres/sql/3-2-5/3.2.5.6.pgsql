@@ -21,5 +21,11 @@ SELECT
   -- - CAST(replace(birth_date, '-', '') AS int64)
   -- ) / 10000
 
+  -- ■ Hive, SparkSQLの場合、replaceをregexp_replace、textをstring,
+  -- integerをintに置き換える
+  -- SparkSQLの場合はさらにCURRENT_DATEをCURRENT_DATE()に置き換える
+  -- ( CAST(regexp_replace(CAST(CURRENT_DATE() AS string), '-', '') AS int)
+  -- - CAST(regexp_replace(birth_date, '-', '') AS int)
+  -- ) / 10000
 FROM mst_users_with_dates
 ;
