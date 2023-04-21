@@ -16,6 +16,7 @@ SELECT
   -- ただし、ピリオドが特殊文字のため、バックスラッシュでエスケープを行う
   -- , CAST(split(ip, '\\.')[0] AS int) AS ip_part_1
   -- , CAST(split(ip, '\\.')[1] AS int) AS ip_part_2
+  -- , CAST(split(ip, '\\.')[2] AS int) AS ip_part_3
 FROM
   (SELECT '192.168.0.1' AS ip) AS t
 ;
