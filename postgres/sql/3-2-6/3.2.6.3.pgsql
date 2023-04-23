@@ -20,4 +20,6 @@ SELECT
   -- , CAST(split(ip, '\\.')[3] AS int) AS ip_part_4
 FROM
   (SELECT '192.168.0.1' AS ip) AS t
+  -- ■ PostgreSQLの場合、明示的に型の指定が必要
+  -- (SELECT CAST('192.168.0.1' AS text) AS ip) AS t
 ;
