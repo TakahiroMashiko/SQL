@@ -7,6 +7,9 @@ SELECT
   + CAST(split_part(ip, '.', 4) AS integer) * 2^0
   AS ip_integer
 
+  -- ■ BigQueryの場合、split関数で配列に分解し、n番目の要素を取り出す
+  -- , CAST(split(ip, '.')[SAFE_ORDINAL(1)] AS int64) * pow(2, 24)
+
 FROM
   (SELECT '192.168.0.1') AS text
 ;
