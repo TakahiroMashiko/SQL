@@ -9,6 +9,7 @@ SELECT
 
   -- ■ BigQueryの場合、split関数で配列に分解し、n番目の要素を取り出す
   -- , CAST(split(ip, '.')[SAFE_ORDINAL(1)] AS int64) * pow(2, 24)
+  -- , CAST(split(ip, '.')[SAFE_ORDINAL(2)] AS int64) * pow(2, 16)
 
 FROM
   (SELECT '192.168.0.1') AS text
