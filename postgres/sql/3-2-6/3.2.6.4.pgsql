@@ -16,6 +16,7 @@ SELECT
   -- Hive, SparkSQLの場合、split関数で配列に分解し、n番目の要素を取り出す
   -- ただし、コロンが特殊文字のため、バックスラッシュでエスケープを行う
   -- , CAST(split(ip, '\\.')[0] AS int) * pow(2, 24)
+  -- , CAST(split(ip, '\\.')[1] AS int) * pow(2, 16)
 
 FROM
   (SELECT '192.168.0.1') AS text
