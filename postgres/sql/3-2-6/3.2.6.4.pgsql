@@ -17,6 +17,7 @@ SELECT
   -- ただし、コロンが特殊文字のため、バックスラッシュでエスケープを行う
   -- , CAST(split(ip, '\\.')[0] AS int) * pow(2, 24)
   -- , CAST(split(ip, '\\.')[1] AS int) * pow(2, 16)
+  -- , CAST(split(ip, '\\.')[2] AS int) * pow(2, 8)
 
 FROM
   (SELECT '192.168.0.1') AS text
