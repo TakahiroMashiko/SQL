@@ -18,6 +18,7 @@ SELECT
   -- , CAST(split(ip, '\\.')[0] AS int) * pow(2, 24)
   -- , CAST(split(ip, '\\.')[1] AS int) * pow(2, 16)
   -- , CAST(split(ip, '\\.')[2] AS int) * pow(2, 8)
+  -- , CAST(split(ip, '\\.')[3] AS int) * pow(2, 0)
 
 FROM
   (SELECT '192.168.0.1') AS text
