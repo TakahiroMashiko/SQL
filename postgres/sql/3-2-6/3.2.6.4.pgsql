@@ -23,5 +23,7 @@ SELECT
   -- AS ip_integer
 
 FROM
-  (SELECT '192.168.0.1') AS text
+  (SELECT '192.168.0.1') AS t
+    -- ■ PostgreSQLの場合、明示的に型の指定が必要
+    -- (SELECT CAST('192.168.0.1' AS text) AS ip) AS t
 ;
