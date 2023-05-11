@@ -1,0 +1,4 @@
+SELECT
+
+FROM
+  (SELECT '192.168.0.1') AS t
