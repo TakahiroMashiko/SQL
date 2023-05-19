@@ -9,6 +9,7 @@ SELECT
 
   -- ■ BigQueryの場合、split関数で配列に分解し、n番目の要素を取り出す
   -- , CONCAT(
+  --    lpad(split(ip, '.')[SAFE_ORDINAL(1), 3, '0'])
 
   -- ) AS ip_padding
 
