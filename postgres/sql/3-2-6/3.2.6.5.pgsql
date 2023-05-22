@@ -11,6 +11,7 @@ SELECT
   -- , CONCAT(
   --    lpad(split(ip, '.')[SAFE_ORDINAL(1), 3, '0'])
   --  , lpad(split(ip, '.')[SAFE_ORDINAL(2), 3, '0'])
+  --  , lpad(split(ip, '.')[SAFE_ORDINAL(3), 3, '0'])
 
   -- ) AS ip_padding
 
