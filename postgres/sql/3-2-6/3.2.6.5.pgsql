@@ -15,5 +15,11 @@ SELECT
   --  , lpad(split(ip, '.')[SAFE_ORDINAL(4), 3, '0'])
   -- ) AS ip_padding
 
+  -- ■ Hive, SparkSQLの場合、split関数で配列に分解し、n番目の要素を取り出す
+  -- ただし、コロンが特殊文字のため、バックスラッシュでエスケープを行う
+  -- , CONCAT(
+
+  -- ) AS ip_padding
+
 FROM
   (SELECT '192.168.0.1') AS t
