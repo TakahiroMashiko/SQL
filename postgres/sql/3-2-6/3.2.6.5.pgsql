@@ -18,7 +18,8 @@ SELECT
   -- ■ Hive, SparkSQLの場合、split関数で配列に分解し、n番目の要素を取り出す
   -- ただし、コロンが特殊文字のため、バックスラッシュでエスケープを行う
   -- , CONCAT(
-  --   lpad(split(ip, '\\.')[0], 3, '0')
+  --     lpad(split(ip, '\\.')[0], 3, '0')
+  --   , lpad(split(ip, '\\.')[1], 3, '0')
   -- ) AS ip_padding
 
 FROM
