@@ -21,7 +21,7 @@ SELECT
   --     lpad(split(ip, '\\.')[0], 3, '0')
   --   , lpad(split(ip, '\\.')[1], 3, '0')
   --   , lpad(split(ip, '\\.')[2], 3, '0')
-
+  --   , lpad(split(ip, '\\.')[3], 3, '0')
   -- ) AS ip_padding
 
 FROM
