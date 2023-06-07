@@ -5,7 +5,7 @@ SELECT
   , SUM(score) AS sum
   , AVG(score) AS avg
   , MAX(score) AS max
-
+  , MIN(score) AS min
 FROM
   review
 ;
