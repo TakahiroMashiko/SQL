@@ -5,6 +5,7 @@ SELECT
   , COUNT(DISTINCT product_id) AS product_count
   , SUM(score) AS sum
   , AVG(score) AS avg
+  , MAX(score) AS max
 
 FROM
   review
