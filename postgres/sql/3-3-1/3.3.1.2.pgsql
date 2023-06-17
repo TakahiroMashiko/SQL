@@ -9,5 +9,6 @@ SELECT
   , MIN(score) AS min
 FROM
   review
-
+GROUP BY
+  user_id
 ;
