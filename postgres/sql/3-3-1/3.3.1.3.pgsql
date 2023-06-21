@@ -1,4 +1,7 @@
 SELECT
-  user_id
+    user_id
+  , product_id
 
 FROM
+  review
+;
