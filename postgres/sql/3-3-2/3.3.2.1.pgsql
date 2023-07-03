@@ -11,6 +11,7 @@ SELECT
 
   -- 現在の行より前の行の値を取得する
   , LAG(product_id)     OVER(ORDER BY score DESC) AS lag1
+  , LAG(product_id, 2)  OVER(ORDER BY score DESC) AS lag2
 
 FROM popular_products
 ORDER BY row
