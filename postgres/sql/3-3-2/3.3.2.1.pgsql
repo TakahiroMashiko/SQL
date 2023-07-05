@@ -15,6 +15,7 @@ SELECT
 
   -- 現在の行より後の行の値を取得する
   , LEAD(product_id)    OVER(ORDER BY score DESC) AS lead1
+  , LEAD(product_id, 2) OVER(ORDER BY score DESC) AS lead2
 
 FROM popular_products
 ORDER BY row
