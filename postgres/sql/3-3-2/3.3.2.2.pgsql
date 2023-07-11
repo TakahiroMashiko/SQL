@@ -7,6 +7,9 @@ SELECT
 
   -- ランキング上位からの累計スコア合計を計算する
   , SUM(score)
+      OVER(ORDER BY score DESC
+        ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
+      AS cum_score
 
 FROM popular_products
 ORDER BY row
