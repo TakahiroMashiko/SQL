@@ -11,6 +11,9 @@ SELECT
         ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
       AS cum_score
 
+  -- 今の行と前後1行ずつの、合計3行の平均スコアを計算する
+  , AVG(score)
+
 FROM popular_products
 ORDER BY row
 ;
