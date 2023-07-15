@@ -16,6 +16,10 @@ SELECT
       OVER(ORDER BY score DESC
         ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING)
     AS local_score
+
+  -- ランキング最上位の商品IDを取得する
+  , FIRST_VALUE(product_id)
+
 FROM popular_products
 ORDER BY row
 ;
