@@ -19,6 +19,9 @@ SELECT
 
   -- ランキング最上位の商品IDを取得する
   , FIRST_VALUE(product_id)
+      OVER(ORDER BY score DESC
+        ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING)
+    AS first_value
 
 FROM popular_products
 ORDER BY row
