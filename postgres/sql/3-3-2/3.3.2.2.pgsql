@@ -23,6 +23,9 @@ SELECT
         ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING)
     AS first_value
 
+  -- ランキング最下位の商品IDを取得する
+  , LAST_VALUE(product_id)
+  
 FROM popular_products
 ORDER BY row
 ;
