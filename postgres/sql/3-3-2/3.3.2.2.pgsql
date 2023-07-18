@@ -25,7 +25,10 @@ SELECT
 
   -- ランキング最下位の商品IDを取得する
   , LAST_VALUE(product_id)
-  
+            OVER(ORDER BY score DESC
+        ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING)
+    AS last_value
+
 FROM popular_products
 ORDER BY row
 ;
