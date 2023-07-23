@@ -7,6 +7,7 @@ SELECT
     -- ランキングの最初から最後までの範囲を対象に商品IDを集約
     -- ■ PostgreSQLの場合はarray_agg, Hive, SparkSQLの場合はcollect_listを使用する
     , array_agg(product_id)
+    -- , collect_list(product_id)
 
 FROM popular_products
 WHERE category = 'action'
