@@ -24,6 +24,9 @@ SELECT
     -- ■ PostgreSQLの場合はarray_agg, Hive, SparkSQLの場合はcollect_listを使用する
     , array_agg(product_id)
     -- , collect_list(product_id)
+        OVER(ORDER BY score DESC
+            ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING)
+    AS local_agg
 
 FROM popular_products
 WHERE category = 'action'
