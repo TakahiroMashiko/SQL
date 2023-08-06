@@ -10,5 +10,7 @@ SELECT
 
     -- カテゴリごとに、同順位を許容するランキングを付与する
     , RANK()
+        OVER(PARTITION BY category ORDER BY score DESC)
+    AS rank
 
 FROM popular_products
