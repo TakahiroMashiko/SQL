@@ -13,4 +13,7 @@ SELECT
         OVER(PARTITION BY category ORDER BY score DESC)
     AS rank
 
+    -- カテゴリごとに、同順位を許容し、同順位の次の順位を飛ばさないランキングを付与する
+    , DENSE_RANK()
+
 FROM popular_products
