@@ -17,5 +17,6 @@ SELECT
     , DENSE_RANK()
         OVER(PARTITION BY category ORDER BY score DESC)
     AS dense_rank
-
 FROM popular_products
+ORDER BY category, row
+;
