@@ -4,6 +4,7 @@ FROM
   ( SELECT
       category
     , product
+    , store
 
   ) AS popular_products_with_rank
 
