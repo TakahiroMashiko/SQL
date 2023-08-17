@@ -13,5 +13,5 @@ FROM
   ) AS popular_products_with_rank
 -- 外側のクエリでランクを絞り込む
 WHERE rank <= 2
-
+ORDER BY category, rank
 ;
