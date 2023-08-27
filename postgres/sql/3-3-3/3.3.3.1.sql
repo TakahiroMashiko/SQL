@@ -10,5 +10,6 @@ SELECT
 
     -- Hive, SparkSQLの場合はcollet_listとconcat_wsを用いる
     -- , concat_ws(',', collet_list(product_id)) AS product_ids
+  , SUM(price) AS amount
 FROM daily_kpi
 ;
