@@ -12,5 +12,6 @@ SELECT
     -- , concat_ws(',', collet_list(product_id)) AS product_ids
   , SUM(price) AS amount
 FROM purchase_daily_log
+GROUP BY purchase_id
 ORDER BY purchase_id
 ;
