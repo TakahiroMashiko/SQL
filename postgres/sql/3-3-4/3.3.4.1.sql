@@ -1,6 +1,8 @@
 SELECT
     q.year
+    -- Q1からQ4までのラベル名を表示
   , CASE
+      WHEN p.idx = 1 THEN 'q1'
 
     END AS quarter
 FROM
