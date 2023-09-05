@@ -5,7 +5,8 @@ SELECT
       WHEN p.idx = 1 THEN 'q1'
       WHEN p.idx = 2 THEN 'q2'
       WHEN p.idx = 3 THEN 'q3'
+      WHEN p.idx = 4 THEN 'q4'
+   END AS quarter
 
-    END AS quarter
 FROM
     quarterly_sales AS q
