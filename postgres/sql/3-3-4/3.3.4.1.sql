@@ -11,6 +11,7 @@ SELECT
   , CASE
       WHEN p.idx = 1 THEN q.q1
       WHEN p.idx = 2 THEN q.q2
+      WHEN p.idx = 3 THEN q.q3
     END AS sales
 FROM
     quarterly_sales AS q
