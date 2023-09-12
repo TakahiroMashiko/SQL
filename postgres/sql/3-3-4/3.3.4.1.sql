@@ -16,3 +16,9 @@ SELECT
     END AS sales
 FROM
     quarterly_sales AS q
+CROSS JOIN
+    -- 行に展開したい列数分の連番テーブルを作成する
+    (
+
+    ) AS p
+;
