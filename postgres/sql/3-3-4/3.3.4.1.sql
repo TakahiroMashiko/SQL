@@ -19,6 +19,7 @@ FROM
 CROSS JOIN
     -- 行に展開したい列数分の連番テーブルを作成する
     ( SELECT 1 AS idx
+      UNION ALL SELECT 2 AS idx
 
     ) AS p
 ;
