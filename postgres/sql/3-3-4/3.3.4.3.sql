@@ -10,4 +10,4 @@ FROM
   -- CROSS JOIN unnest(split(product_ids, ',')) AS product_id
 
   -- ■ HiveやSparkSQLの場合は、LATERAL VIEW explodeを用いる
-  -- LATERAL VIEW explode(split(product_ids, ',')) e AS product_id;
+  -- LATERAL VIEW explode(split(product_ids, ',')) e AS product_id;sq
