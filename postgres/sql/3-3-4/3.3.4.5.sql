@@ -2,6 +2,6 @@ SELECT *
 FROM (
   SELECT 1 AS idx
   UNION ALL SELECT 2 AS idx
-
+  UNION ALL SELECT 3 AS idx
 ) AS pivot
 ;
