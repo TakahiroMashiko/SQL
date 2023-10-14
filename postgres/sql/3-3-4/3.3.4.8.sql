@@ -7,4 +7,8 @@ SELECT
   , split_part(l.product_ids, ',', p.idx) AS product_id
 FROM
   purchase_log AS l
+JOIN
+  (
+
+  ) AS p
 ;
