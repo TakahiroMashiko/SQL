@@ -9,6 +9,7 @@ FROM
   purchase_log AS l
 JOIN
   (
+    SELECT 1 AS idx
 
   ) AS p
 ;
