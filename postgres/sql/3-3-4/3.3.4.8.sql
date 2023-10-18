@@ -13,4 +13,6 @@ JOIN
     UNION ALL SELECT 2 AS idx
     UNION ALL SELECT 3 AS idx
   ) AS p
+  -- ピボットテーブルのidが、商品の数以下の場合のみ統合する
+  ON p.idx <=
 ;
