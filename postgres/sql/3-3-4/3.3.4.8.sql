@@ -16,5 +16,5 @@ JOIN
   -- ピボットテーブルのidが、商品の数以下の場合のみ統合する
   ON p.idx <=
     (1 + char_length(l.product_ids)
-
+       - char_length(replace(l.product_ids, ',', '')))
 ;
