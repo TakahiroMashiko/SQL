@@ -8,3 +8,4 @@ FROM
 JOIN
   -- カテゴリー別の売上額を結合する
   category_sales AS s
+  ON m.category_id = s.category_id
