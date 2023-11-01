@@ -12,3 +12,5 @@ JOIN
 JOIN
   -- カテゴリー別の商品を結合する
   product_sale_ranking AS r
+  ON m.category_id = r.category_id
+;
