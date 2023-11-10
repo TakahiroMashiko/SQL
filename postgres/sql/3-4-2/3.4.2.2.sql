@@ -14,3 +14,4 @@ LEFT JOIN
 LEFT JOIN
   -- カテゴリー別のトップ売上商品を1件取得し結合する
   product_sale_ranking AS r
+  ON m.category_id = r.category_id
