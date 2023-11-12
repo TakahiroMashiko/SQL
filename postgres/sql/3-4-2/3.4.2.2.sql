@@ -16,3 +16,4 @@ LEFT JOIN
   product_sale_ranking AS r
   ON m.category_id = r.category_id
   AND r.rank = 1
+;
