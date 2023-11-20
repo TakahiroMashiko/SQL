@@ -9,6 +9,7 @@ SELECT
    -- 相関サブクエリでカテゴリー別のトップ売上商品を1件取得（ランクによる絞込が不要）
    , (SELECT r.product_id
    FROM category_sale_ranking AS r
+   WHERE m.category_id = r.category_id
    ) AS top_sale_product
 FROM
   mst_categories AS m
