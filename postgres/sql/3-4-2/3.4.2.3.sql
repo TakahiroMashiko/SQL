@@ -11,6 +11,7 @@ SELECT
    FROM category_sale_ranking AS r
    WHERE m.category_id = r.category_id
    ORDER BY sales DESC
+   LIMIT 1
    ) AS top_sale_product
 FROM
   mst_categories AS m
