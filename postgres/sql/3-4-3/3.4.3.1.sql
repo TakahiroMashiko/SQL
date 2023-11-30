@@ -8,3 +8,5 @@ SELECT
   , SIGN(COUNT(p.user_id)) AS has_purchased
 FROM
   mst_users_with_card_number AS m
+  LEFT JOIN
+    purchase_log AS p
