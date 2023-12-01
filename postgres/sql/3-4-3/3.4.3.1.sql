@@ -11,3 +11,5 @@ FROM
   LEFT JOIN
     purchase_log AS p
     ON m.user_id = p.user_id
+GROUP BY m.user_id, m.card_number
+;
