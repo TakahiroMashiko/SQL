@@ -10,3 +10,4 @@ FROM
   mst_users_with_card_number AS m
   LEFT JOIN
     purchase_log AS p
+    ON m.user_id = p.user_id
