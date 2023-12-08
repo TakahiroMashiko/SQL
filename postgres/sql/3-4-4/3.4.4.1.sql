@@ -9,5 +9,5 @@ product_sale_ranking AS (
     product_sales
 )
 SELECT *
-
+FROM product_sale_ranking
 ;
