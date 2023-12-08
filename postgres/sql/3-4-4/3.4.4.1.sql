@@ -8,3 +8,6 @@ product_sale_ranking AS (
   FROM
     product_sales
 )
+SELECT *
+
+;
