@@ -5,5 +5,7 @@ product_sale_ranking AS (
     , product_id
     , sales
     , ROW_NUMBER() OVER(PARTITION BY category_name ORDER BY sales DESC) AS rank
+  FROM
+    product_sales
 )
 ;
