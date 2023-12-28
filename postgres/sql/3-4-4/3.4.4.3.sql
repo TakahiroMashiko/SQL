@@ -10,5 +10,6 @@ product_sale_ranking AS (
 )
 , mst_rank as (
   SELECT DISTINCT rank
+  FROM product_sale_ranking
 )
 ;
