@@ -9,6 +9,6 @@ product_sale_ranking AS (
     product_sales
 )
 , mst_rank as (
-  
+  SELECT DISTINCT rank
 )
 ;
