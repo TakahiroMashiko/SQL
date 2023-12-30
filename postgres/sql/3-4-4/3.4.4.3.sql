@@ -12,4 +12,5 @@ product_sale_ranking AS (
   SELECT DISTINCT rank
   FROM product_sale_ranking
 )
+SELECT *
 ;
