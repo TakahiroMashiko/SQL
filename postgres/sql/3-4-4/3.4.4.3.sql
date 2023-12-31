@@ -12,6 +12,7 @@ product_sale_ranking AS (
   SELECT DISTINCT rank
   FROM product_sale_ranking
 )
-SELECT *
-FROM mst_rank
+SELECT
+  m.rank
+FROM mst_rank AS m
 ;
