@@ -15,5 +15,6 @@ product_sale_ranking AS (
 SELECT
   m.rank
   , r1.product_id AS dvd
+  , r1.sales AS dvd_sales
 FROM mst_rank AS m
 ;
