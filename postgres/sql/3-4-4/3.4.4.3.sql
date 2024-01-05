@@ -19,5 +19,6 @@ SELECT
   , r2.product_id AS cd
   , r2.sales AS cd_sales
   , r3.product_id AS book
+  , r3.sales AS book_sales
 FROM mst_rank AS m
 ;
