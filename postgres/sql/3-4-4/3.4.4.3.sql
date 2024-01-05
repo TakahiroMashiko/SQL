@@ -17,5 +17,7 @@ SELECT
   , r1.product_id AS dvd
   , r1.sales AS dvd_sales
   , r2.product_id AS cd
+  , r2.sales AS cd_sales
+  , r3.product_id AS book
 FROM mst_rank AS m
 ;
