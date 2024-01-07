@@ -23,4 +23,5 @@ SELECT
 FROM mst_rank AS m
 LEFT JOIN
   product_sale_ranking AS r1
+  ON m.rank = r1.rank
 ;
