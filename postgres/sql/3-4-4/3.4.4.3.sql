@@ -21,4 +21,6 @@ SELECT
   , r3.product_id AS book
   , r3.sales AS book_sales
 FROM mst_rank AS m
+LEFT JOIN
+  product_sale_ranking AS r1
 ;
