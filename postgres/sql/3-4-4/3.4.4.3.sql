@@ -25,4 +25,6 @@ LEFT JOIN
   product_sale_ranking AS r1
   ON m.rank = r1.rank
   AND r1.category_name = 'dvd'
+LEFT JOIN
+  product_sale_ranking AS r2
 ;
