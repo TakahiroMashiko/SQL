@@ -33,4 +33,5 @@ LEFT JOIN
   product_sale_ranking AS r3
   ON m.rank = r3.rank
   AND r3.category_name = 'book'
+ORDER BY m.rank
 ;
