@@ -5,5 +5,5 @@ mst_devices as (
   UNION ALL SELECT 3 AS device_id, 'アプリ' AS device_name
 )
 SELECT *
-
+FROM mst_devices
 ;
