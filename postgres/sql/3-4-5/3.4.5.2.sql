@@ -8,3 +8,5 @@ SELECT
   u.user_id
 FROM
   users AS u
+LEFT JOIN
+  mst_devices AS d
