@@ -10,3 +10,5 @@ FROM
   users AS u
 LEFT JOIN
   mst_devices AS d
+  ON u.regist_device = d.device_id
+;
