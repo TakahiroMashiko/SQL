@@ -6,6 +6,7 @@ mst_devices as (
 )
 SELECT
   u.user_id
+  , d.device_name
 FROM
   users AS u
 LEFT JOIN
