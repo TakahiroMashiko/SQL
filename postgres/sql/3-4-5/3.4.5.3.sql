@@ -6,3 +6,5 @@ mst_devices(device_id, device_name) AS (
   , (3, 'アプリ')
 )
 SELECT *
+FROM mst_devices
+;
