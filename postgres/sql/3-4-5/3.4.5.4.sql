@@ -8,7 +8,7 @@ mst_devices AS (
     -- 配列をテーブルに展開する
     (SELECT explode(
       array(
-
+        array(1 , 'PC')
       ) d
     )
     ) AS t
