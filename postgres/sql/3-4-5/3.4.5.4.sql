@@ -9,6 +9,8 @@ mst_devices AS (
     (SELECT explode(
       array(
         array(1 , 'PC')
+        , array(2 , 'SP')
+        , array(3 , 'アプリ')
       ) d
     )
     ) AS t
