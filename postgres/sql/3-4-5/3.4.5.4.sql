@@ -11,9 +11,8 @@ mst_devices AS (
         array(1 , 'PC')
         , array(2 , 'SP')
         , array(3 , 'アプリ')
-      ) d
-    )
+      )) d
     ) AS t
 )
-
+SELECT *
 ;
