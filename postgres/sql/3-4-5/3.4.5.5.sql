@@ -7,6 +7,7 @@ mst_devices AS (
     FROM
     -- 配列をテーブルに展開する
     (SELECT explode(
-
+      array(
+      )) d
     ) AS t
 )
