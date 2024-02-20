@@ -9,6 +9,7 @@ mst_devices AS (
     (SELECT explode(
       array(
           map('device_id', '1' , 'device_name', 'PC')
+        , map('device_id', '2' , 'device_name', 'SP')
       )) d
     ) AS t
 )
