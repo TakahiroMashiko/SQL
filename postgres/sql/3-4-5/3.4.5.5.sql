@@ -10,6 +10,7 @@ mst_devices AS (
       array(
           map('device_id', '1' , 'device_name', 'PC')
         , map('device_id', '2' , 'device_name', 'SP')
+        , map('device_id', '3' , 'device_name', 'アプリ')
       )) d
     ) AS t
 )
