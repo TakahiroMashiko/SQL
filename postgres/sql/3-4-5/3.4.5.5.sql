@@ -14,3 +14,5 @@ mst_devices AS (
       )) d
     ) AS t
 )
+SELECT *
+;
