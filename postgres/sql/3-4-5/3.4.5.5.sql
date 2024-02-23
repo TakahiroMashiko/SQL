@@ -15,4 +15,5 @@ mst_devices AS (
     ) AS t
 )
 SELECT *
+FROM mst_devices
 ;
