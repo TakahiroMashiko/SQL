@@ -6,3 +6,4 @@ series AS (
   -- ■ BigQueryの場合、generate_arrayを用いる
   -- SELECT idx FROM unnest(generate_array(1, 5)) AS idx
 )
+SELECT *
