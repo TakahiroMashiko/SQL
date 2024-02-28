@@ -7,3 +7,5 @@ series AS (
   -- SELECT idx FROM unnest(generate_array(1, 5)) AS idx
 )
 SELECT *
+FROM series
+;
