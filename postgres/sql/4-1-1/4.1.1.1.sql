@@ -5,4 +5,5 @@ SELECT
   , AVG(purchase_amount) AS avg_amount
 FROM
   purchase_log
+GROUP BY dt
 ;
