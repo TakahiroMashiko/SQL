@@ -6,4 +6,5 @@ SELECT
 FROM
   purchase_log
 GROUP BY dt
+ORDER BY dt
 ;
