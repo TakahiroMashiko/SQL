@@ -7,4 +7,5 @@ SELECT
     OVER(ORDER BY dt ROWS BETWEEN 6 PRECEDING AND CURRENT ROW)
     AS seven_day_avg
 FROM purchase_log
+GROUP BY dt
 ;
