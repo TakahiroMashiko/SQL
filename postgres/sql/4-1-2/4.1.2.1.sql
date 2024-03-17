@@ -9,7 +9,8 @@ SELECT
 
   -- 厳密に直近の7日間の平均を計算する
   , CASE
-  
+      WHEN
+        7 = COUNT(*)
   END
   AS seven_day_avg_strict
 FROM purchase_log
