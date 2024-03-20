@@ -14,6 +14,7 @@ SELECT
         OVER(ORDER BY dt ROWS BETWEEN 6 PRECEDING AND CURRENT ROW)
       THEN
         AVG(SUM(purchase_amount))
+        OVER(ORDER BY dt ROWS BETWEEN 6 PRECEDING AND CURRENT ROW)
   END
   AS seven_day_avg_strict
 FROM purchase_log
