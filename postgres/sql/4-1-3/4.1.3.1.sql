@@ -6,6 +6,7 @@ SELECT
   -- ■ PostgreSQL, Hive, BigQuery, SparkSQLの場合、substrが利用できる
   -- , substr(dt, 1, 7) AS year_month
   , SUM(purchase_amount) AS total_amount
+  , SUM(SUM(purchase_amount))
 FROM
   purchase_log
 ;
