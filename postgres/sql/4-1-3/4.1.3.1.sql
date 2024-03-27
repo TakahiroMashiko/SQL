@@ -7,6 +7,8 @@ SELECT
   -- , substr(dt, 1, 7) AS year_month
   , SUM(purchase_amount) AS total_amount
   , SUM(SUM(purchase_amount))
+    -- ■ PostgreSQL, Hive, Redshift, SparkSQLの場合は下記
+    OVER(PARTITION BY substring(dt, 1, 7) ORDER BY dt ROWS UNBOUNDED PRECEDING)
 FROM
   purchase_log
 ;
