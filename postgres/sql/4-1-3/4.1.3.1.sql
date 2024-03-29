@@ -9,6 +9,8 @@ SELECT
   , SUM(SUM(purchase_amount))
     -- ■ PostgreSQL, Hive, Redshift, SparkSQLの場合は下記
     OVER(PARTITION BY substring(dt, 1, 7) ORDER BY dt ROWS UNBOUNDED PRECEDING)
+    -- ■ BigQueryの場合はsubstringをsubstrに修正
+    -- OVER(PARTITION BY substr(dt, 1, 7) ORDER BY dt ROWS UNBOUNDED PRECEDING)
 FROM
   purchase_log
 ;
