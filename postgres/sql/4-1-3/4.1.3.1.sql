@@ -13,4 +13,5 @@ SELECT
     -- OVER(PARTITION BY substr(dt, 1, 7) ORDER BY dt ROWS UNBOUNDED PRECEDING)
 FROM
   purchase_log
+GROUP BY dt
 ;
