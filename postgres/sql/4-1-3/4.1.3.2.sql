@@ -14,5 +14,7 @@ daily_purchase AS (
 )
 SELECT
   *
+FROM
+  daily_purchase
 
 ;
