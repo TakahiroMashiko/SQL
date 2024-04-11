@@ -16,5 +16,5 @@ SELECT
   *
 FROM
   daily_purchase
-
+ORDER BY dt
 ;
