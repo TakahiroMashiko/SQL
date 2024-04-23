@@ -14,6 +14,8 @@ daily_purchase AS (
 )
 SELECT
   dt
+  , concat(year, '-', month) AS year_month
 FROM
   daily_purchase
+ORDER BY dt
 ;
