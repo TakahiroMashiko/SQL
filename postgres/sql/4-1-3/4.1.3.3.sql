@@ -15,6 +15,8 @@ daily_purchase AS (
 SELECT
   dt
   , concat(year, '-', month) AS year_month
+  -- ■ Redshiftの場合はconcat関数を組み合わせるか、||演算子を用いる
+  -- , concat(concat(year, '-'), month) AS year_month
 FROM
   daily_purchase
 ORDER BY dt
