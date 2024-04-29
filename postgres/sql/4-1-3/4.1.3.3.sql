@@ -19,6 +19,7 @@ SELECT
   -- , concat(concat(year, '-'), month) AS year_month
   -- , year || '-' || month AS year_month
   , purchase_amount
+  , SUM(purchase_amount)
 FROM
   daily_purchase
 ORDER BY dt
