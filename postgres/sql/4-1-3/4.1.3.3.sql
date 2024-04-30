@@ -20,6 +20,8 @@ SELECT
   -- , year || '-' || month AS year_month
   , purchase_amount
   , SUM(purchase_amount)
+      OVER(PARTITION BY year, month ORDER BY dt ROWS UNBOUNDED PRECEDING)
+  AS agg_amount
 FROM
   daily_purchase
 ORDER BY dt
