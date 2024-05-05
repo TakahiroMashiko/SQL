@@ -8,6 +8,7 @@ daily_purchase AS (
   , substring(dt, 1, 4) AS year
   , substring(dt, 6, 2) AS month
   , substring(dt, 9, 2) AS date
+  , SUM(purchase_amount) AS purchase_amount
 
 )
 
