@@ -10,7 +10,7 @@ daily_purchase AS (
   , substring(dt, 9, 2) AS date
   , SUM(purchase_amount) AS purchase_amount
   FROM purchase_log
-
+  GROUP BY dt
 )
 
 ;
