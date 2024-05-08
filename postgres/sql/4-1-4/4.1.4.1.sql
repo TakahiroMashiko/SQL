@@ -12,5 +12,8 @@ daily_purchase AS (
   FROM purchase_log
   GROUP BY dt
 )
+SELECT
 
+FROM
+  daily_purchase
 ;
