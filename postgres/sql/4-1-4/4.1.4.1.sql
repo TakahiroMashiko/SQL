@@ -13,7 +13,7 @@ daily_purchase AS (
   GROUP BY dt
 )
 SELECT
-
+  month
 FROM
   daily_purchase
 ;
