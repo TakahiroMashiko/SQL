@@ -14,6 +14,7 @@ daily_purchase AS (
 )
 SELECT
   month
+  , SUM(CASE year WHEN '2014' THEN purchase_amount END) AS amount_2014
 FROM
   daily_purchase
 ;
