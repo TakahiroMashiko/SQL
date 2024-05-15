@@ -22,4 +22,5 @@ SELECT
     AS rate
 FROM
   daily_purchase
+GROUP BY month
 ;
