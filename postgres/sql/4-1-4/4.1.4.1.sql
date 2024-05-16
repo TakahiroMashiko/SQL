@@ -23,4 +23,5 @@ SELECT
 FROM
   daily_purchase
 GROUP BY month
+ORDER BY month
 ;
