@@ -13,5 +13,8 @@ daily_purchase AS (
     GROUP BY dt
 )
 , monthly_amount AS (
-  
+-- 月別の売上を集計
+SELECT
+
+FROM daily_purchase
 )
