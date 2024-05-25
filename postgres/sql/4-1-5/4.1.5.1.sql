@@ -16,6 +16,7 @@ daily_purchase AS (
 -- 月別の売上を集計
 SELECT
   year
-
+  , month
+  
 FROM daily_purchase
 )
