@@ -19,4 +19,5 @@ SELECT
   , month
   , SUM(purchase_amount) AS amount
 FROM daily_purchase
+GROUP BY year, month
 )
