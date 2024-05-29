@@ -21,3 +21,7 @@ SELECT
 FROM daily_purchase
 GROUP BY year, month
 )
+
+, calc_index AS (
+  
+)
