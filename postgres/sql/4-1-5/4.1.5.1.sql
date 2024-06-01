@@ -26,7 +26,7 @@ GROUP BY year, month
 SELECT
   year
   , month
-  
+  , amount
 FROM
   monthly_purchase
 )
