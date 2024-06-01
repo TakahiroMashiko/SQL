@@ -25,7 +25,8 @@ GROUP BY year, month
 , calc_index AS (
 SELECT
   year
-
+  , month
+  
 FROM
   monthly_purchase
 )
