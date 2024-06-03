@@ -29,4 +29,6 @@ SELECT
   , amount
 FROM
   monthly_purchase
+ORDER BY
+  year, month
 )
