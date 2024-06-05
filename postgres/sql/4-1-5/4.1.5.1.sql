@@ -29,6 +29,8 @@ SELECT
   , amount
   -- 2015年の累計売上を計算
   , SUM(CASE WHEN year = '2015' THEN amount END)
+    OVER(ORDER BY year, month ROWS UNBOUNDED PRECEDING)
+  AS agg_amount
 FROM
   monthly_purchase
 ORDER BY
