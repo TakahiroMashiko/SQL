@@ -31,6 +31,8 @@ SELECT
   , SUM(CASE WHEN year = '2015' THEN amount END)
     OVER(ORDER BY year, month ROWS UNBOUNDED PRECEDING)
   AS agg_amount
+  -- 当月から11ヶ月前までの合計売上（移動年計）を計算
+  , SUM(amount)
 FROM
   monthly_purchase
 ORDER BY
