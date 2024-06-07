@@ -40,3 +40,8 @@ FROM
 ORDER BY
   year, month
 )
+-- 最後に、2015年のデーtのみに絞り込む
+SELECT
+
+FROM
+  calc_index
