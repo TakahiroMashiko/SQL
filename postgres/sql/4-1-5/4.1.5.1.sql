@@ -33,6 +33,8 @@ SELECT
   AS agg_amount
   -- 当月から11ヶ月前までの合計売上（移動年計）を計算
   , SUM(amount)
+    OVER(ORDER BY year, month ROWS BETWEEN 11 PRECEDING AND CURRENT ROW)
+  AS year_avg_amount
 FROM
   monthly_purchase
 ORDER BY
