@@ -42,6 +42,6 @@ ORDER BY
 )
 -- 最後に、2015年のデーtのみに絞り込む
 SELECT
-
+  concat(year, '-', month) AS year_month
 FROM
   calc_index
