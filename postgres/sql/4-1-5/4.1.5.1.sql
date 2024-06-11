@@ -47,3 +47,5 @@ FROM
   calc_index
 WHERE
   year = '2015'
+ORDER BY
+  year_month
