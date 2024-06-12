@@ -40,9 +40,11 @@ FROM
 ORDER BY
   year, month
 )
--- 最後に、2015年のデーtのみに絞り込む
+-- 最後に、2015年のデータのみに絞り込む
 SELECT
   concat(year, '-', month) AS year_month
+  -- ■ Redshiftの場合はconcat関数を組み合わせるか、||演算子を用いる
+  -- concat(concat(year, '-'), month) AS year_month
 FROM
   calc_index
 WHERE
