@@ -48,7 +48,7 @@ SELECT
   -- year || '-' || month AS year_month
   , amount
   , agg_amount
-
+  , year_avg_amount
 FROM
   calc_index
 WHERE
