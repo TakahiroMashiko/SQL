@@ -6,5 +6,6 @@ daily_purchase AS (
       -- ■ PostgreSQL, Hive, Redshift, SparkSQLの場合は下記
       -- ■ BigQueryの場合、substringをsubstrに修正
       , substring(dt, 1, 4) AS year
+      , substring(dt, 6, 2) AS month
     FROM purchase_log
 )
