@@ -14,6 +14,7 @@ daily_purchase AS (
 )
 , monthly_purchase AS (
   SELECT
-
+    year
+    
   FROM daily_purchase
 )
