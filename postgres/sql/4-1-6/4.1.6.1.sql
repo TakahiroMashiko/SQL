@@ -16,5 +16,6 @@ daily_purchase AS (
   SELECT
     year
     , month
+    , SUM(orders) AS orders
   FROM daily_purchase
 )
