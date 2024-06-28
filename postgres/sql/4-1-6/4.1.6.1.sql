@@ -18,7 +18,7 @@ daily_purchase AS (
     , month
     , SUM(orders) AS orders
     , AVG(purchase_amount) AS avg_amount
-
+    , SUM(purchase_amount) AS monthly
   FROM daily_purchase
   GROUP BY year, month
 )
