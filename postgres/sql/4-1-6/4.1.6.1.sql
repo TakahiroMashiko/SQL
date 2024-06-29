@@ -22,3 +22,7 @@ daily_purchase AS (
   FROM daily_purchase
   GROUP BY year, month
 )
+SELECT
+
+FROM
+  monthly_purchase
