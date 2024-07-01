@@ -23,6 +23,6 @@ daily_purchase AS (
   GROUP BY year, month
 )
 SELECT
-
+  concat(year, '-', month) AS year_month
 FROM
   monthly_purchase
