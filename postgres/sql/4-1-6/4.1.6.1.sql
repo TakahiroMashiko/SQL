@@ -28,6 +28,6 @@ SELECT
   -- concat (concat(year, '-'), month) AS year_month
   -- year || '-' || month AS year_month
   , orders
-
+  , avg_amount
 FROM
   monthly_purchase
