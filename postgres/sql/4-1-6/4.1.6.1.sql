@@ -29,5 +29,6 @@ SELECT
   -- year || '-' || month AS year_month
   , orders
   , avg_amount
+  , monthly
 FROM
   monthly_purchase
