@@ -30,5 +30,6 @@ SELECT
   , orders
   , avg_amount
   , monthly
+  , SUM(monthly)
 FROM
   monthly_purchase
