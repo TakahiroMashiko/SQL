@@ -33,5 +33,8 @@ SELECT
   , SUM(monthly)
     OVER(PARTITION BY year ORDER BY month ROWS UNBOUNDED PRECEDING)
   AS agg_amount
+  -- 12ヶ月前の売上を求める
+  , LAG(monthly, 12)
+    OVER(ORDER BY year, month)
 FROM
   monthly_purchase
