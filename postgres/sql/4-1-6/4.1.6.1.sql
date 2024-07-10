@@ -31,5 +31,7 @@ SELECT
   , avg_amount
   , monthly
   , SUM(monthly)
+    OVER(PARTITION BY year ORDER BY month ROWS UNBOUNDED PRECEDING)
+  AS agg_amount
 FROM
   monthly_purchase
