@@ -38,5 +38,6 @@ SELECT
     OVER(ORDER BY year, month)
     -- ■ SparkSQLの場合は下記を用いる
     -- OVER(ORDER BY year, month ROWS BETWEEN 12 PRECEDING AND 12 PRECEDING)
+  AS last_year
 FROM
   monthly_purchase
