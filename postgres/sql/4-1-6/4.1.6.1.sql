@@ -39,5 +39,7 @@ SELECT
     -- ■ SparkSQLの場合は下記を用いる
     -- OVER(ORDER BY year, month ROWS BETWEEN 12 PRECEDING AND 12 PRECEDING)
   AS last_year
+  -- 12ヶ月前の売上に対する割合を求める
+  , 100.0
 FROM
   monthly_purchase
