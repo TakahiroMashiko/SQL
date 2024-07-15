@@ -41,5 +41,6 @@ SELECT
   AS last_year
   -- 12ヶ月前の売上に対する割合を求める
   , 100.0
+    * monthly
 FROM
   monthly_purchase
