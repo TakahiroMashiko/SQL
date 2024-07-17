@@ -42,5 +42,8 @@ SELECT
   -- 12ヶ月前の売上に対する割合を求める
   , 100.0
     * monthly
+    / LAG(monthly, 12)
+
 FROM
   monthly_purchase
+;
