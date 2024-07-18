@@ -43,7 +43,7 @@ SELECT
   , 100.0
     * monthly
     / LAG(monthly, 12)
-
+      OVER_(ORDER BY year, month)
 FROM
   monthly_purchase
 ;
