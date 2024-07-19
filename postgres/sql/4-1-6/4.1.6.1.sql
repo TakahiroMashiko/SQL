@@ -44,6 +44,8 @@ SELECT
     * monthly
     / LAG(monthly, 12)
       OVER_(ORDER BY year, month)
+      -- ■ SparkSQLの場合は下記を用いる
+      -- OVER(ORDER BY year, month ROWS BETWEEN 12 PRECEDING AND 12 PRECEDING)
 FROM
   monthly_purchase
 ;
