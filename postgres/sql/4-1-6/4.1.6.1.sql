@@ -49,4 +49,6 @@ SELECT
     AS rate
 FROM
   monthly_purchase
+ORDER BY
+  year_month
 ;
