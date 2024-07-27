@@ -8,6 +8,5 @@ sub_category_amount AS (
 
   FROM
     purchase_detail_log
-  GROUP BY
-    category, sub,category
+
 )
