@@ -4,6 +4,7 @@ sub_category_amount AS (
   SELECT
     category as category
     , sub_category as sub_category
+    , SUM(price) as amount
   FROM
     purchase_detail_log
 )
