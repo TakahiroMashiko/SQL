@@ -2,12 +2,15 @@ WITH
 sub_category_amount AS (
   -- 小カテゴリの売上を集計する
   SELECT
-    category as category
-    , sub_category as sub_category
-    , SUM(price) as amount
+    category AS category
+    , sub_category AS sub_category
+    , SUM(price) AS amount
 
   FROM
     purchase_detail_log
   GROUP BY
     category, sub,category
+)
+, category_amount AS (
+
 )
