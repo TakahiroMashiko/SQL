@@ -15,4 +15,5 @@ sub_category_amount AS (
   -- 大カテゴリの売上を集計する
   SELECT
     category
+    , 'all' AS sub_category
 )
