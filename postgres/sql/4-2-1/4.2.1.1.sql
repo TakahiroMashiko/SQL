@@ -16,4 +16,5 @@ sub_category_amount AS (
   SELECT
     category
     , 'all' AS sub_category
+    , SUM(price) AS amount
 )
