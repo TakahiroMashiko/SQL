@@ -19,4 +19,6 @@ sub_category_amount AS (
     , SUM(price) AS amount
   FROM
     purchase_detail_log
+  GROUP BY
+    category
 )
