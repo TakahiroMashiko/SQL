@@ -22,3 +22,6 @@ sub_category_amount AS (
   GROUP BY
     category
 )
+, total_amount AS (
+  
+)
