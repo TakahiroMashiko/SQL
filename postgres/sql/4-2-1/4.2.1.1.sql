@@ -26,6 +26,7 @@ sub_category_amount AS (
   -- 全体の売上を集計する
   SELECT
     'all' AS category
+    , 'all' AS sub_category
   FROM
     purchase_detail_log
 )
