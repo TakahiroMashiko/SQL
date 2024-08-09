@@ -27,6 +27,7 @@ sub_category_amount AS (
   SELECT
     'all' AS category
     , 'all' AS sub_category
+    , SUM(price) AS amount
   FROM
     purchase_detail_log
 )
