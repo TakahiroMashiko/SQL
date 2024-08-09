@@ -31,3 +31,5 @@ sub_category_amount AS (
   FROM
     purchase_detail_log
 )
+
+SELECT  FROM sub_category_amount
