@@ -32,4 +32,4 @@ sub_category_amount AS (
     purchase_detail_log
 )
 
-SELECT  FROM sub_category_amount
+SELECT category FROM sub_category_amount
