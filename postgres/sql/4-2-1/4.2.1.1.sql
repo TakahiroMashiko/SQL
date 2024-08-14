@@ -33,3 +33,4 @@ sub_category_amount AS (
 )
 
 SELECT category, sub_category, amount FROM sub_category_amount
+UNION ALL SELECT FROM category_amount
