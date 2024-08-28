@@ -2,7 +2,7 @@ WITH
 sub_category_amount AS (
   -- 小カテゴリの売上を集計する
   SELECT
-    category AS category
+      category AS category
     , sub_category AS sub_category
     , SUM(price) AS amount
 
