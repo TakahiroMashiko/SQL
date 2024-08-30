@@ -5,7 +5,6 @@ sub_category_amount AS (
       category AS category
     , sub_category AS sub_category
     , SUM(price) AS amount
-
   FROM
     purchase_detail_log
   GROUP BY
