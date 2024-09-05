@@ -4,3 +4,5 @@ SELECT
   , SUM(price) AS amount
 FROM
   purchase_detail_log
+GROUP BY
+  ROLLUP(category, sub_category)
