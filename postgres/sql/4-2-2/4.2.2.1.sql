@@ -1,3 +1,4 @@
-SELECT
+WITH
+monthly_sales AS (
 
-FROM
+)
