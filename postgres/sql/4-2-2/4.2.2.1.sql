@@ -12,3 +12,6 @@ monthly_sales AS (
   GROUP BY
     category1
 )
+, sales_composition_ratio AS (
+
+)
