@@ -13,5 +13,8 @@ monthly_sales AS (
     category1
 )
 , sales_composition_ratio AS (
-
+  SELECT
+  
+  FROM
+    monthly_sales
 )
