@@ -14,7 +14,8 @@ monthly_sales AS (
 )
 , sales_composition_ratio AS (
   SELECT
-  
+      category1
+    , amount
   FROM
     monthly_sales
 )
