@@ -23,6 +23,7 @@ monthly_sales AS (
     -- 構成比累計：　100.0 * 項目別累計売上 / 全体売上
     , 100.0 * SUM(amount) OVER(ORDER BY amount DESC)
       ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+    / SUM(amount) OVER() AS cumulative_raito
   FROM
     monthly_sales
 )
