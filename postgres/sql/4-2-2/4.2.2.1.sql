@@ -27,3 +27,7 @@ monthly_sales AS (
   FROM
     monthly_sales
 )
+SELECT
+    *
+FROM
+  sales_composition_ratio
