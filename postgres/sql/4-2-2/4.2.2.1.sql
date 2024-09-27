@@ -31,3 +31,6 @@ SELECT
     *
 FROM
   sales_composition_ratio
+ORDER BY
+  amount DESC
+;
