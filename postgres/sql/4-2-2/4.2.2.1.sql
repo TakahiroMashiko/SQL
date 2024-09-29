@@ -29,6 +29,10 @@ monthly_sales AS (
 )
 SELECT
     *
+  -- 構成比累計の範囲に応じてランク付け
+  , CASE
+
+    END AS abc_rank
 FROM
   sales_composition_ratio
 ORDER BY
