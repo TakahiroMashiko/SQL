@@ -31,8 +31,9 @@ SELECT
     *
   -- 構成比累計の範囲に応じてランク付け
   , CASE
-      WHEN cumulative_ratio BETWEEN  0 ABD 70 THEN 'A'
-      WHEN cumulative_ratio BETWEEN  71 ABD 90 THEN 'B'
+      WHEN cumulative_ratio BETWEEN  0 AND 70 THEN 'A'
+      WHEN cumulative_ratio BETWEEN  71 AND 90 THEN 'B'
+      WHEN cumulative_ratio BETWEEN  91 AND 100 THEN 'C'
     END AS abc_rank
 FROM
   sales_composition_ratio
