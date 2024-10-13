@@ -8,5 +8,6 @@ daily_category_amount as (
     , substring(dt, 1, 4) AS year
     , substring(dt, 6, 2) AS month
     , substring(dt, 9, 2) AS date
+    , SUM(price) AS amount
   FROM purchase_detail_log
 )
