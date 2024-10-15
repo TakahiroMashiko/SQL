@@ -12,3 +12,6 @@ daily_category_amount as (
   FROM purchase_detail_log
   GROUP BY dt, category
 )
+, monthly_category_amount as (
+    
+)
