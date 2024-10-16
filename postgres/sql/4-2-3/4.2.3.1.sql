@@ -13,5 +13,8 @@ daily_category_amount as (
   GROUP BY dt, category
 )
 , monthly_category_amount as (
-    
+  SELECT
+
+  FROM
+    daily_category_amount
 )
