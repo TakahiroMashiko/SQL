@@ -14,7 +14,7 @@ daily_category_amount as (
 )
 , monthly_category_amount as (
   SELECT
-
+    concat(year, '-', month) AS year_month
   FROM
     daily_category_amount
 )
