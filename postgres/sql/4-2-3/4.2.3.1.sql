@@ -19,6 +19,7 @@ daily_category_amount as (
       -- concat(concat(year, '-'), month) AS year_month
       -- year || '-' || month AS year_month
     , category
+    , SUM(amount) AS amount
   FROM
     daily_category_amount
 )
