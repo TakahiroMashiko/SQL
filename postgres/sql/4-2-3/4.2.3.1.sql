@@ -22,4 +22,6 @@ daily_category_amount as (
     , SUM(amount) AS amount
   FROM
     daily_category_amount
+   GROUP BY
+    year, month, category
 )
