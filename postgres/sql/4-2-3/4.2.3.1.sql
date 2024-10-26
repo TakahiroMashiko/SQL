@@ -25,3 +25,7 @@ daily_category_amount as (
    GROUP BY
     year, month, category
 )
+SELECT
+
+FROM
+  monthly_category_amount
