@@ -26,6 +26,6 @@ daily_category_amount as (
     year, month, category
 )
 SELECT
-
+  year_month
 FROM
   monthly_category_amount
