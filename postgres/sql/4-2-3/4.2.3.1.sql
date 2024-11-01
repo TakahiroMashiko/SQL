@@ -29,6 +29,6 @@ SELECT
     year_month
   , category
   , amount
-
+  , FIRST_VALUE(amount)
 FROM
   monthly_category_amount
