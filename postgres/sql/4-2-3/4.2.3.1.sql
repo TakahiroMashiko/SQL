@@ -31,5 +31,6 @@ SELECT
   , amount
   , FIRST_VALUE(amount)
       OVER(PARTITION BY category ORDER BY year_month, category ROWS UNBOUNDED PRECEDING)
+    AS base_amount
 FROM
   monthly_category_amount
