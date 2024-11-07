@@ -34,5 +34,6 @@ SELECT
     AS base_amount
   , 100.0
     * amount
+    / FIRST_VALUE(amount)
 FROM
   monthly_category_amount
