@@ -35,5 +35,6 @@ SELECT
   , 100.0
     * amount
     / FIRST_VALUE(amount)
+        OVER(PARTITION BY category ORDER BY year_month, category ROWS UNBOUNDED PRECEDING)
 FROM
   monthly_category_amount
