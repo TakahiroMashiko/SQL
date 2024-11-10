@@ -39,3 +39,6 @@ SELECT
     AS rate
 FROM
   monthly_category_amount
+ORDER BY
+  year_month, category
+;
