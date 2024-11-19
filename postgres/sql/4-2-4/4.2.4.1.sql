@@ -13,5 +13,5 @@ FROM
   purchase_detail_log
 )
 SELECT *
-
+FROM stats
 ;
