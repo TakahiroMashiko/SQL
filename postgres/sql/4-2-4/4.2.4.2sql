@@ -32,3 +32,4 @@ FROM
   FROM
     purchase_detail_log, stats
 )
+SELECT *
