@@ -34,3 +34,5 @@ FROM
 )
 SELECT *
 FROM purchase_log_with_bucket
+ORDER BY amount
+;
