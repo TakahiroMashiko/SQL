@@ -14,7 +14,7 @@ FROM
 )
 , purchase_log_with_bucket AS (
   SELECT
-  
+    price
   FROM
     purchase_detail_log, stats
 )
