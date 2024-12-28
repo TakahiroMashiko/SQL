@@ -15,7 +15,9 @@ FROM
 , purchase_log_with_bucket AS (
   SELECT
       price
-    , min_price  
+    , min_price
+      -- 正規化金額:　対象の金額から最小金額を引く
+    , price - min_price AS diff
   FROM
     purchase_detail_log, stats
 )
