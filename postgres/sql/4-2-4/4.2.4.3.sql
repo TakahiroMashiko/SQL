@@ -13,21 +13,21 @@ FROM
   purchase_detail_log
 )
 , purchase_log_with_bucket AS (
-  SELECT
-      price
-    , min_price
-      -- 正規化金額:　対象の金額から最小金額を引く
-    , price - min_price AS diff
-      -- 階級範囲:　金額範囲を階級数で割る
-    , 1.0 * range_price / bucket_num AS bucket_range
+    SELECT
+        price
+      , min_price
+        -- 正規化金額:　対象の金額から最小金額を引く
+      , price - min_price AS diff
+        -- 階級範囲:　金額範囲を階級数で割る
+      , 1.0 * range_price / bucket_num AS bucket_range
 
-      -- 階級の判定: FLOOR（正規化金額 / 階級範囲）
-    , FLOOR(
-        1.0 * (price - min_price)
-    ) +1 AS bucket
+        -- 階級の判定: FLOOR（正規化金額 / 階級範囲）
+      , FLOOR(
+          1.0 * (price - min_price)
+      ) +1 AS bucket
 
-      -- PostgreSQLの組み込み関数を使う場合
-      -- width_bucket(price, min_price, max_price, bucket_num) AS bucket
-  FROM
-    purchase_detail_log, stats
+        -- PostgreSQLの組み込み関数を使う場合
+        -- width_bucket(price, min_price, max_price, bucket_num) AS bucket
+    FROM
+      purchase_detail_log, stats
 )
