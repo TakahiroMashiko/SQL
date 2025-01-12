@@ -11,3 +11,7 @@ WITH stats AS (
     FROM
         purchase_detail_log
 )
+SELECT
+
+FROM
+    purchase_log_with_bucket
