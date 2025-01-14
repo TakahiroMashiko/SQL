@@ -12,6 +12,6 @@ WITH stats AS (
         purchase_detail_log
 )
 SELECT
-
+    bucket
 FROM
     purchase_log_with_bucket
