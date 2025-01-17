@@ -16,5 +16,7 @@ SELECT
     -- 階級の下限と上限を計算する
     , min_price + bucket_range * (bucket - 1) AS lower_limit
     , min_price + bucket_range * bucket AS upper_limit
+    -- 度数をカウントする
+    , COUNT(price) AS num_purchase
 FROM
     purchase_log_with_bucket
