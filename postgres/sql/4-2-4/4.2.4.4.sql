@@ -22,3 +22,5 @@ SELECT
     , SUM(price) AS total_amount
 FROM
     purchase_log_with_bucket
+GROUP BY
+    bucket, min_price, bucket_range
