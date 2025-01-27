@@ -5,6 +5,8 @@ SELECT
     5000 AS max_price
     -- 金額の最小値
   , 0 AS min_price
+    -- 金額の範囲
+  , 5000 AS range_price
 FROM
     purchase_detail_log
 )
