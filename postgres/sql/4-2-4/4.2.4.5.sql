@@ -7,6 +7,8 @@ SELECT
   , 0 AS min_price
     -- 金額の範囲
   , 5000 AS range_price
+    -- 階級数
+  , 10 AS bucket_num
 FROM
     purchase_detail_log
 )
