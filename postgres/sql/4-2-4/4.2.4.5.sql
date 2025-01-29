@@ -12,3 +12,6 @@ SELECT
 FROM
     purchase_detail_log
 )
+, purchase_log_with_bucket AS (
+
+)
