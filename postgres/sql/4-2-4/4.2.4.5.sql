@@ -22,7 +22,7 @@ FROM
     , 1.0 * range_price / bucket_num AS bucket_range
       -- 階級の判定: FLOOR（正規化金額 / 階級範囲）
     , FLOOR(
-
+        1.0 * (price - min_price)
     ) +1 AS bucket
   FROM
     purchase_detail_log, stats
