@@ -25,6 +25,9 @@ FROM
         1.0 * (price - min_price)
         / (1.0 * range_price / backet_num)
     ) +1 AS bucket
+    
+    -- PostgreSQLの組み込み関数を使う場合
+    -- width_bucket(price, min_price, max_price, bucket_num) AS bucket
   FROM
     purchase_detail_log, stats
 )
