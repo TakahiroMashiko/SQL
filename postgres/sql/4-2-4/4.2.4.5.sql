@@ -31,3 +31,7 @@ FROM
   FROM
     purchase_detail_log, stats
 )
+SELECT
+
+FROM
+  purchase_log_with_bucket
