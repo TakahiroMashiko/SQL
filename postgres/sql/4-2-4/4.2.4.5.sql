@@ -29,9 +29,9 @@ FROM
     -- PostgreSQLの組み込み関数を使う場合
     -- width_bucket(price, min_price, max_price, bucket_num) AS bucket
   FROM
-    purchase_detail_log, stats
+      purchase_detail_log, stats
 )
 SELECT
-
+    bucket
 FROM
-  purchase_log_with_bucket
+    purchase_log_with_bucket
