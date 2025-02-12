@@ -33,5 +33,7 @@ FROM
 )
 SELECT
     bucket
+    -- 階級の下限と上限を計算する
+  , min_price + bucket_range * (bucket - 1) AS lower_limit
 FROM
     purchase_log_with_bucket
