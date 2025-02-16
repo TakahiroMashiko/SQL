@@ -38,5 +38,7 @@ SELECT
   , min_price + bucket_range * bucket AS upper_limit
     -- 度数をカウントする
   , COUNT(price) AS num_purchase
+    -- 合計金額を計算する
+  , SUM(price) AS total_amount
 FROM
     purchase_log_with_bucket
