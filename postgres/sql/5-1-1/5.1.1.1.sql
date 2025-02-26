@@ -5,6 +5,6 @@ stats as (
     FROM action_log
 )
 SELECT
-
+    l.action
 FROM
     action_log AS l
