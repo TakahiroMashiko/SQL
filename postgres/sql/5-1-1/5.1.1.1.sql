@@ -6,5 +6,7 @@ stats as (
 )
 SELECT
     l.action
+  -- アクションUU
+  , COUNT(DISTINCT l.seesion) AS action_uu
 FROM
     action_log AS l
