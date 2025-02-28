@@ -8,5 +8,6 @@ SELECT
     l.action
   -- アクションUU
   , COUNT(DISTINCT l.seesion) AS action_uu
+  , COUNT(1) AS action_count
 FROM
     action_log AS l
