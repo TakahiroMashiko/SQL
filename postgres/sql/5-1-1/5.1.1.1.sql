@@ -12,5 +12,7 @@ SELECT
   , COUNT(1) AS action_count
   -- 全体UU
   , s.total_uu
+  -- 利用率: アクションUU / 全体UU
+  , 100.0 * COUNT(DISTINCT l.seesion) / s.total_uu AS usage_rate
 FROM
     action_log AS l
