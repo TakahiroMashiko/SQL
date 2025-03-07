@@ -18,3 +18,6 @@ SELECT
   , 1.0 * COUNT(1) / COUNT(DISTINCT l.seesion) AS count_per_user
 FROM
     action_log AS l
+  -- ログ全体のユニークユーザー数を全レコードに結合する
+  CROSS JOIN
+    stats AS s
