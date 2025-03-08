@@ -21,3 +21,6 @@ FROM
   -- ログ全体のユニークユーザー数を全レコードに結合する
   CROSS JOIN
     stats AS s
+GROUP BY
+  l.action, s.total_uu
+;
