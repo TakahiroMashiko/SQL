@@ -19,7 +19,7 @@ SELECT
 FROM
     action_log AS l
   -- ログ全体のユニークユーザー数を全レコードに結合する
-  CROSS JOIN
+CROSS JOIN
     stats AS s
 GROUP BY
   l.action, s.total_uu
