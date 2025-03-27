@@ -10,3 +10,7 @@ action_log_with_status as (
     FROM
         action_log
 )
+SELECT
+
+FROM
+    action_log_with_status
