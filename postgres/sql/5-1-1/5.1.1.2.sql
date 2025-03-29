@@ -11,6 +11,6 @@ action_log_with_status as (
         action_log
 )
 SELECT
-
+    *
 FROM
     action_log_with_status
