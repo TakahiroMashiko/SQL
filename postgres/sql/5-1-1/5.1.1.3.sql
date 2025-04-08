@@ -11,6 +11,6 @@ action_log_with_status as (
         action_log
 )
 SELECT
-
+      COALESCE(action, 'all') AS action
 FROM
     action_log_with_status
