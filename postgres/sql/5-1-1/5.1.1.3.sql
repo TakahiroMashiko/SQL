@@ -12,5 +12,6 @@ action_log_with_status as (
 )
 SELECT
       COALESCE(action, 'all') AS action
+    , COALESCE(login_status, 'all') AS login_status
 FROM
     action_log_with_status
