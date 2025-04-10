@@ -13,5 +13,6 @@ action_log_with_status as (
 SELECT
       COALESCE(action, 'all') AS action
     , COALESCE(login_status, 'all') AS login_status
+    , COALESCE(DISTINCT session, 'all') AS action_uu
 FROM
     action_log_with_status
