@@ -14,5 +14,6 @@ SELECT
       COALESCE(action, 'all') AS action
     , COALESCE(login_status, 'all') AS login_status
     , COALESCE(DISTINCT session, 'all') AS action_uu
+    , COUNT(1) AS action_count
 FROM
     action_log_with_status
