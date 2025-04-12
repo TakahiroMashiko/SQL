@@ -17,3 +17,7 @@ SELECT
     , COUNT(1) AS action_count
 FROM
     action_log_with_status
+GROUP BY
+    -- ▪ PostgreSQL, SparkSQLの場合は下記
+    ROLLUP(action, login_status)
+;
