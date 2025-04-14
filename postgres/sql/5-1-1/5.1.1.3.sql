@@ -19,5 +19,7 @@ FROM
     action_log_with_status
 GROUP BY
     -- ▪ PostgreSQL, SparkSQLの場合は下記
-    ROLLUP(action, login_status)
+      ROLLUP(action, login_status)
+    -- ▪ Hiveの場合は下記
+    -- action, login_status WITH ROLLUP
 ;
