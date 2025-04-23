@@ -8,6 +8,8 @@ WITH action_log_with_status AS (
         , CASE
             WHEN
               COALESCE(MAX(user_id)
+                OVER(PARTITION BY seesion ORDER BY stamp
+                  ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
                 , '') <> ''
           END AS member_status
     FROM
