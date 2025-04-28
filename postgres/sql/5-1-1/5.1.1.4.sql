@@ -12,7 +12,7 @@ WITH action_log_with_status AS (
                   ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
                 , '') <> ''
               THEN 'member'
-            
+            ELSE 'none'
           END AS member_status
     FROM
         action_log
