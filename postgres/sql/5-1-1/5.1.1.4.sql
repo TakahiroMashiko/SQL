@@ -17,3 +17,8 @@ WITH action_log_with_status AS (
     FROM
         action_log
 )
+SELECT
+
+FROM
+    action_log_with_status
+;
