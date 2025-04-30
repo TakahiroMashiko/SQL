@@ -17,8 +17,7 @@ WITH action_log_with_status AS (
     FROM
         action_log
 )
-SELECT
-
+SELECT *
 FROM
     action_log_with_status
 ;
