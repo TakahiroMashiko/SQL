@@ -7,13 +7,13 @@ WITH action_log_with_status AS (
         -- それ以降のログのステータスをmemberとする
         , CASE
             WHEN
-              COALESCE(MAX(user_id)
-                OVER(PARTITION BY seesion ORDER BY stamp
-                  ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
-                , '') <> ''
-              THEN 'member'
+                COALESCE(MAX(user_id)
+                    OVER(PARTITION BY seesion ORDER BY stamp
+                        ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
+                    , '') <> ''
+                THEN 'member'
             ELSE 'none'
-          END AS member_status
+        END AS member_status
     FROM
         action_log
 )
