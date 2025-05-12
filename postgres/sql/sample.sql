@@ -9,6 +9,7 @@ with search_log as (
             when
                 lag (s_log.log_time) over (partition by s_log.user_id order by s_log.log_time) is null
                     or s_log.log_time > lag(s_log.log_time) over (partition by s_log.user_id order by s_log.log_time) + interval '00:30' 
+                then 1
             else 0
         end as session_delta
     from
