@@ -12,6 +12,7 @@ with search_log as (
                 then 1
             else 0
         end as session_delta
+        , s_log.log_time
     from
         activity.search_log s_log
 )
