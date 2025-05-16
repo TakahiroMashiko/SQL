@@ -13,6 +13,9 @@ with search_log as (
             else 0
         end as session_delta
         , s_log.log_time
+        , trim(m.word1
+
+        ) as keywords
     from
         activity.search_log s_log
 )
