@@ -14,7 +14,7 @@ with search_log as (
         end as session_delta
         , s_log.log_time
         , trim(m.word1
-
+            ||' '|| coalesce(m.word2,'')
         ) as keywords
     from
         activity.search_log s_log
