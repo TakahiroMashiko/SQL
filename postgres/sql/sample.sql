@@ -15,6 +15,7 @@ with search_log as (
         , s_log.log_time
         , trim(m.word1
             ||' '|| coalesce(m.word2,'')
+            ||' '|| coalesce(m.word3,'')
         ) as keywords
     from
         activity.search_log s_log
