@@ -16,6 +16,7 @@ with search_log as (
         , trim(m.word1
             ||' '|| coalesce(m.word2,'')
             ||' '|| coalesce(m.word3,'')
+            ||' '|| coalesce(m.word4,'')
         ) as keywords
     from
         activity.search_log s_log
