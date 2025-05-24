@@ -21,4 +21,5 @@ with search_log as (
         ) as keywords
     from
         activity.search_log s_log
+    inner join source.factor_score_flg f
 )
