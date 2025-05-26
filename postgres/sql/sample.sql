@@ -22,5 +22,6 @@ with search_log as (
     from
         activity.search_log s_log
     inner join source.factor_score_flg f
-        on s_log.user_id = f.user_id`
+        on s_log.user_id = f.user_id
+        and s_log.keywords = f.keywords
 )
