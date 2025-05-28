@@ -25,4 +25,6 @@ with search_log as (
         on s_log.user_id = f.user_id
         and s_log.keywords = f.keywords
     inner join source. factor_score_mst m on s_log.attr_id = m.attr_id
+    where
+        s_log.log_time >= '2015-02-01 00:00:00'
 )
