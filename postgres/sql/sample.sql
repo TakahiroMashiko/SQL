@@ -27,4 +27,5 @@ with search_log as (
     inner join source. factor_score_mst m on s_log.attr_id = m.attr_id
     where
         s_log.log_time >= '2015-02-01 00:00:00'
+        and s_log.log_time < '2015-02-01 01:00:00'
 )
