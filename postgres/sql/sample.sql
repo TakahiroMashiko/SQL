@@ -29,3 +29,12 @@ with search_log as (
         s_log.log_time >= '2015-02-01 00:00:00'
         and s_log.log_time < '2015-02-01 01:00:00'
 )
+/*
+ユーザの検索分析
+PK: user_id, user_session_id
+*/
+select
+
+from (
+    
+)
