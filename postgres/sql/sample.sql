@@ -36,5 +36,9 @@ PK: user_id, user_session_id
 select
 
 from (
-    
+    select
+
+    from (
+        
+    )
 )
