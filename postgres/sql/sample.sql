@@ -37,8 +37,8 @@ select
 
 from (
     select
-
+        user_id
     from (
-        
+
     )
 )
