@@ -38,7 +38,11 @@ select
 from (
     select
         user_id
-    from (
 
+    from (
+        select    
+            
+        from
+            search_log
     )
 )
