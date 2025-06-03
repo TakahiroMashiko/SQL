@@ -41,7 +41,7 @@ from (
 
     from (
         select    
-            
+            user_id
         from
             search_log
     )
