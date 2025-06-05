@@ -42,6 +42,9 @@ from (
     from (
         select    
             user_id
+            , sum(session_delta) over (
+                
+            )
         from
             search_log
     )
