@@ -43,7 +43,7 @@ from (
         select    
             user_id
             , sum(session_delta) over (
-                
+                partition by user_id
             )
         from
             search_log
