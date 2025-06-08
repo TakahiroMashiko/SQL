@@ -44,6 +44,7 @@ from (
             user_id
             , sum(session_delta) over (
                 partition by user_id
+                order by log_time
             )
         from
             search_log
