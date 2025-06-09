@@ -45,6 +45,7 @@ from (
             , sum(session_delta) over (
                 partition by user_id
                 order by log_time
+                rows between unbounded preceding and current row
             )
         from
             search_log
