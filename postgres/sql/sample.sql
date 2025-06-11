@@ -46,7 +46,7 @@ from (
                 partition by user_id
                 order by log_time
                 rows between unbounded preceding and current row
-            )
+            ) as user_session_id
         from
             search_log
     )
