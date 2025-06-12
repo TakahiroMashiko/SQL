@@ -47,6 +47,7 @@ from (
                 order by log_time
                 rows between unbounded preceding and current row
             ) as user_session_id
+            , log_time
         from
             search_log
     )
