@@ -1,4 +1,4 @@
-ygd/*
+/*
 検索ログの前処理
 PK: user_id, log_time
 */.
@@ -38,7 +38,7 @@ select
 from (
     select
         user_id
-
+        , user_session_id
     from (
         select    
             user_id
@@ -48,6 +48,7 @@ from (
                 rows between unbounded preceding and current row
             ) as user_session_id
             , log_time
+            , keywords
         from
             search_log
     )
