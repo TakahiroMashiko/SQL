@@ -39,8 +39,9 @@ from (
     select
         user_id
         , user_session_id
+        , min(log_time) as session_start_time
     from (
-        select    
+        select
             user_id
             , sum(session_delta) over (
                 partition by user_id
