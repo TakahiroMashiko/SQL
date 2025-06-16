@@ -40,6 +40,7 @@ from (
         user_id
         , user_session_id
         , min(log_time) as session_start_time
+        , max(log_time) as session_end_time
     from (
         select
             user_id
