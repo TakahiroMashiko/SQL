@@ -41,6 +41,7 @@ from (
         , user_session_id
         , min(log_time) as session_start_time
         , max(log_time) as session_end_time
+        , count(*) as num_steps
     from (
         select
             user_id
