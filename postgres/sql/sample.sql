@@ -42,6 +42,7 @@ from (
         , min(log_time) as session_start_time
         , max(log_time) as session_end_time
         , count(*) as num_steps
+        , max(case session_step when 1 then keywords else null end) as step1
     from (
         select
             user_id
