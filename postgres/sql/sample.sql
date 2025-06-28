@@ -49,6 +49,7 @@ from (
         , max(case session_step when 5 then keywords else null end) as step5
         , max(case session_step when 6 then keywords else null end) as step6
         , max(case session_step when 7 then keywords else null end) as step7
+        , max(case session_step when 8 then keywords else null end) as step8ß
     from (
         select
             user_id
