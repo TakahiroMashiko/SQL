@@ -49,7 +49,7 @@ select
     , max(case session_step when 8 then keywords else null end) as step8
 from (
     select
-        
+        user_id
     from (
         select
             user_id
