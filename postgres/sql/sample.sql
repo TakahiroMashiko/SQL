@@ -50,6 +50,7 @@ select
 from (
     select
         user_id
+        , user_session_id
     from (
         select
             user_id
