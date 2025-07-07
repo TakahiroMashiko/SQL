@@ -51,6 +51,9 @@ from (
     select
         user_id
         , user_session_id
+        , row_number() over (
+        
+        ) as session_step
     from (
         select
             user_id
