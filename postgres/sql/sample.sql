@@ -52,7 +52,7 @@ from (
         user_id
         , user_session_id
         , row_number() over (
-        
+            partition by user_id, user_session_id
         ) as session_step
     from (
         select
