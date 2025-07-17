@@ -69,3 +69,5 @@ from (
             search_log
     )
 )
+group by
+    user_id, user_session_id
