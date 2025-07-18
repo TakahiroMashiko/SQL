@@ -18,6 +18,7 @@ with search_log as (
             ||' '|| coalesce(m.word3,'')
             ||' '|| coalesce(m.word4,'')
             ||' '|| coalesce(m.word5,'')
+            ||' '|| coalesce(m.word6,'')
         ) as keywords
     from
         activity.search_log s_log
