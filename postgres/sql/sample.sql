@@ -71,3 +71,5 @@ from (
 )
 group by
     user_id, user_session_id
+order by
+    user_id, user_session_id;
