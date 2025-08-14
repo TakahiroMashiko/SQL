@@ -18,6 +18,8 @@ mst_users_with_int_birth_date AS (
 , mst_users_with_age AS (
     SELECT
         *
+        -- 特定の日付（2017年1月1日）における年齢
+        , floor((int_specific_date - int_birth_date) / 10000) AS age
     FROM
         mst_users_with_int_birth_date
 )
