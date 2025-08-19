@@ -24,6 +24,6 @@ mst_users_with_int_birth_date AS (
         mst_users_with_int_birth_date
 )
 SELECT
-    user_id
+    user_id, sex
 FROM
     mst_users_with_age
