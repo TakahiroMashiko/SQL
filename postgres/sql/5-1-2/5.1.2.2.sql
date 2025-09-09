@@ -9,6 +9,8 @@ mst_users_with_int_birth_date AS (
         , CAST(replace(substring(birth_date, 1, 10), '-', '') AS integer) AS int_birth_date
         -- BigQueryの場合は下記
         -- , CAST(replace(substr(birthdate, 1, 10), '-', '') AS int64) AS int_birth_date
+        -- Hive, SparkSQLの場合は下記
+        -- , CAST(regexp_replace(substring(birth_date, 1, 10), '-', '') AS int)
     FROM
         mst_users
 )
