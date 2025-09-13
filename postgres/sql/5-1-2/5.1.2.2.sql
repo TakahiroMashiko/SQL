@@ -15,3 +15,6 @@ mst_users_with_int_birth_date AS (
     FROM
         mst_users
 )
+, mst_users_with_age AS (
+
+)
