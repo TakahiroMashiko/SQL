@@ -21,3 +21,6 @@ mst_users_with_int_birth_date AS (
     FROM
         mst_users_with_int_birth_date
 )
+, mst_users_with_category AS (
+
+)
