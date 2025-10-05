@@ -22,5 +22,8 @@ mst_users_with_int_birth_date AS (
         mst_users_with_int_birth_date
 )
 , mst_users_with_category AS (
+    SELECT
 
+    FROM
+        mst_users_with_age
 )
