@@ -23,7 +23,7 @@ mst_users_with_int_birth_date AS (
 )
 , mst_users_with_category AS (
     SELECT
-
+        user_id
     FROM
         mst_users_with_age
 )
